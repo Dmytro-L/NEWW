@@ -17,9 +17,8 @@
     width: 100%;
     height: 670px;
     background-image: url("../img/Headerfont.png"),url("../img/HeaderFontIMG.png");
-    background-repeat: no-repeat;
     background-position: left,50%;
-    background-size: auto auto, cover;
+    background-size: cover;
     .topheader{
         
         margin: 0 auto;
@@ -201,9 +200,8 @@ main{
     width: 100%;
     height: 550px;
     background-image: url("../img/Headerfont.png"),url("../img/backgraund2.png");
-    background-repeat: no-repeat;
     background-position: left,50%;
-    background-size: auto auto, cover;
+    background-size: cover;
     img{
         margin-top: 202px;
     }
@@ -374,9 +372,8 @@ main{
     width: 100%;
     height: 712px;
     background-image: url("../img/111.png"),url("../img/background3.png");
-    background-repeat: no-repeat;
     background-position: left,100%;
-    background-size: auto auto, cover;
+    background-size: cover;
     .gram{
         padding-top: 90px;
         
@@ -557,9 +554,8 @@ main{
     width: 100%;
     height: 500px;
     background-image: url("../img/00000.png"),url("../img/11111.png");
-    background-repeat: no-repeat;
     background-position: left,100%;
-    background-size: auto auto, cover;
+    background-size: cover;
     .block1{
         margin-top: 69px;
         width: 32px;
@@ -754,9 +750,9 @@ footer{
     width: 100%;
     height: 400px;
     background-image: url("../img/final.png"),url("../img/finalnot.png");
-    background-repeat: no-repeat;
+    
     background-position: left,100%;
-    background-size: auto auto, cover;
+    background-size: cover;
     .topfooter{
         margin: 0 auto;
         width: 950px;
@@ -939,7 +935,7 @@ footer{
 
             }
             a:hover{
-                opacity: 0.4;
+                opacity: 0.5;
                 color: rgb(0, 255, 255);
             }
 
