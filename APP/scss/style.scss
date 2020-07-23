@@ -43,11 +43,14 @@
             font-weight: 400;
             letter-spacing: 0.33px;
             a{
+                
                 color: #ffffff;
             }
-            .green{
-                color: #00e0d0;
-            }
+        a:hover{
+            color: #00e0d0;
+
+        }
+            
 
         }
     }
@@ -66,10 +69,12 @@
             letter-spacing: 0.32px;
 
         }
-        img{
-            margin-top: 21px;
+        .line{
+            margin: 0 auto;
+            margin-top: 31px;
             width: 50px;
             height: 1px;
+            border-top: 1px solid #00e0d0;
         }
         p{
             margin-top: 30px;
@@ -90,6 +95,10 @@
             
             
 
+        }
+        .button:hover{
+            color: rgb(255, 255, 255);
+            border-color: #fff;
         }
         .next{
             margin: 0 auto;
@@ -122,7 +131,7 @@ main{
     height: 4173px;
     background-color: #ffffff;
 }
-.our_story{
+.home{
     width: 873px;
     height: 262px;
     background-color: #ffffff;
@@ -180,10 +189,14 @@ main{
         @extend %learn_more
         
     }
+    .button:hover{
+        color: #311d5e;
+        border-color: #311d5e;
+    }
 
 }
 }
-.story{ 
+.about{ 
     text-align: center;
     width: 100%;
     height: 550px;
@@ -210,10 +223,9 @@ main{
 }
 .expertise{
     height: 755px;
-    div{
-        margin-top: 72px;
-        margin-bottom: 68px;
-    H3{
+    .cont{
+    .title3{
+        padding-top: 71px;
         margin: 0 auto;
         width: 130px;
         height: 16px;
@@ -225,7 +237,7 @@ main{
     }
     H4{
         margin: 0 auto;
-        margin-top: 16px;
+        margin-top: 36px;
         margin-bottom: 18px;
         width: 411px;
         height: 15px;
@@ -240,65 +252,37 @@ main{
     .try{
         margin: 0 auto;
         width: 50px;
-        height: 2px;
+        height: 1px;
+        background-color: silver;
     }
     .block{
         margin: 0 auto;
-        margin-top: 48px;
+        margin-top: 35px;
         width: 940px;
         height: 500px;
-        .topline{
+    
+        .line1{
+            
+            height: 50%;
             display: flex;
-            justify-content: space-between;
-            .maket{
-                width: 254px;
-                height: 218px;
-                text-align: center;
-                img{
-                    height: 50px;
-
-                }
-                H3{
-                    margin-top: 35px;
-                    width: 243px;
-                    height: 10px;
-                    color: #413d4b;
-                    font-family: "Roboto - Black";
-                    font-size: 14px;
-                    font-weight: 900;
-                    letter-spacing: 0.7px;
-
-                }
-                p{
+            
+                
+                .maket{
                     
-                    margin-top: 25px;
-                    width: 254px;
-                    height: 58px;
-                    opacity: 0.75;
-                    color: #333333;
-                    font-family: Roboto;
-                    font-size: 14px;
-                    font-weight: 300;
-                    line-height: 22px;
-                    letter-spacing: 0.7px;
-
-                }
-            }
-        }
-        .bottomline{
-            margin-top: 65px;
-            display: flex;
-            justify-content: space-between;
-            .maket{
-                width: 254px;
-                height: 218px;
+                    border-bottom: 1px solid rgb(231, 231, 231);
+                
+                width: 33.3%;
+                height: 100%;
                 text-align: center;
                 img{
+                    margin-top: 40px;
                     height: 50px;
+                    
 
                 }
                 H3{
-                    margin-top: 35px;
+                    margin: 0 auto;
+                    margin-top: 30px;
                     width: 253px;
                     height: 10px;
                     color: #413d4b;
@@ -309,8 +293,8 @@ main{
 
                 }
                 p{
-                    
-                    margin-top: 25px;
+                    margin: 0 auto;
+                    margin-top: 50px;
                     width: 254px;
                     height: 58px;
                     opacity: 0.75;
@@ -322,12 +306,69 @@ main{
                     letter-spacing: 0.7px;
 
                 }
+            
+        }
+        .maket:not(.lastchild){
+            border-right: 1px solid rgb(231, 231, 231);
+        }
+
+    }
+    .line2{
+            
+        height: 50%;
+        display: flex;
+        
+            
+            .maket{
+            
+            
+            width: 33.3%;
+            height: 100%;
+            text-align: center;
+            img{
+                margin-top: 40px;
+                height: 50px;
+                
+
             }
-        }
-        }
+            H3{
+                margin: 0 auto;
+                margin-top: 30px;
+                width: 253px;
+                height: 10px;
+                color: #413d4b;
+                font-family: "Roboto - Black";
+                font-size: 14px;
+                font-weight: 900;
+                letter-spacing: 0.7px;
+
+            }
+            p{
+                margin: 0 auto;
+                margin-top: 50px;
+                width: 254px;
+                height: 58px;
+                opacity: 0.75;
+                color: #333333;
+                font-family: Roboto;
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 22px;
+                letter-spacing: 0.7px;
+
+            }
+        
+    }
+    .maket:not(.lastchild){
+        border-right: 1px solid rgb(231, 231, 231);
+    }
+        
+    }
     }
 }
-.meet{
+}
+    
+.teams{
     
     text-align: center;
     width: 100%;
@@ -446,6 +487,10 @@ main{
                 @extend %learn_more
                 
             }
+            .button:hover{
+                border-color: silver;
+                color: silver;
+            }
         }
     }
 .works{
@@ -502,8 +547,12 @@ main{
         @extend %learn_more
 
 }
+.button:hover{
+    border-color: slateblue;
+    color: slateblue;
 }
-.ceo{
+}
+.people_say{
     text-align: center;
     width: 100%;
     height: 500px;
@@ -570,10 +619,18 @@ main{
         align-items: center;
         
         .back{
+            background-color: transparent;
             width: 11px;
             height: 21px;
+            
 
         }
+        
+        .lastblock{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 330px;
         .block2{
             width: 45px;
             height: 45px;
@@ -583,6 +640,7 @@ main{
             width: 70px;
             height: 70px;
         }
+    }
         
 
     }
@@ -616,6 +674,7 @@ main{
             margin-top: 35px;
             div{
                 input{
+                    padding-left: 15px;;
                     color: #413d4b;
                     font-family: Roboto;
                     font-size: 14px;
@@ -630,6 +689,8 @@ main{
             }
             .texteria{
                 textarea{
+                    padding-top: 15px;
+                    padding-left: 14px;
                     width: 460px;
                     height: 200px;
                     border: 1.5px solid silver;
@@ -646,6 +707,10 @@ main{
                 button{
                     margin-top: 21px;
                     @extend %learn_more
+                }
+                button:hover{
+                color: #311d5e;
+                border-color: #311d5e;
                 }
             
         }
@@ -791,11 +856,12 @@ footer{
                 margin-top: 70px;
                 display: flex;
             input{
+                padding-left: 15px;
+                text-align: left;
                 width: 211px;
                 height: 45px;
                 background-color: transparent;
                 border: silver 1px solid;
-                text-align: center;
                 opacity: 0.75;
                 color: #ffffff;
                 font-family: Roboto;
@@ -806,24 +872,32 @@ footer{
                 
 
             }
+            button:hover{
+                opacity: 0.7;
+                background-color: #fff;
+            }
             .telegram{
                 
                 margin-left: 5px;
                     width: 70px;
                     height: 45px;
-                    border: 1px solid #ffffff;
-                    background-color: #ffffff;
+                    background-color: #fcfcfc;
                     opacity: 0.5;
                 img{width: 25px;
                     height: 25px;
 
+                }
+            
                 }
 
             }
             }
         .items{
             margin-top: 17px;
-            
+            button:hover{
+                opacity: 0.4;
+                border-color: rgb(0, 255, 255);
+            }
             button{
                 
                 width: 35px;
@@ -836,6 +910,7 @@ footer{
                 }
                 
             }
+            
         }   
     }
 
@@ -863,6 +938,10 @@ footer{
             
 
             }
+            a:hover{
+                opacity: 0.4;
+                color: rgb(0, 255, 255);
+            }
 
         }
         p{
@@ -879,6 +958,3 @@ footer{
 
         }
     }
-}
-
-

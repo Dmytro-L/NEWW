@@ -1,7 +1,7 @@
 @import url(0.css);
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-.header .bottomheader .button, .our_story .text .button, .meet .gram .button, .works .button, .client .column1 form button {
+.header .bottomheader .button, .home .text .button, .teams .gram .button, .works .button, .client .column1 form button {
   width: 120px;
   height: 40px;
   color: #00e0d0;
@@ -40,7 +40,7 @@
       letter-spacing: 0.33px; }
       .header .topheader .menu a {
         color: #ffffff; }
-      .header .topheader .menu .green {
+      .header .topheader .menu a:hover {
         color: #00e0d0; }
   .header .bottomheader {
     margin: 0 auto;
@@ -55,10 +55,12 @@
       font-size: 32px;
       font-weight: 400;
       letter-spacing: 0.32px; }
-    .header .bottomheader img {
-      margin-top: 21px;
+    .header .bottomheader .line {
+      margin: 0 auto;
+      margin-top: 31px;
       width: 50px;
-      height: 1px; }
+      height: 1px;
+      border-top: 1px solid #00e0d0; }
     .header .bottomheader p {
       margin-top: 30px;
       width: 771px;
@@ -72,6 +74,9 @@
       text-align: center; }
     .header .bottomheader .button {
       margin-top: 50px; }
+    .header .bottomheader .button:hover {
+      color: white;
+      border-color: #fff; }
     .header .bottomheader .next {
       margin: 0 auto;
       width: 55px;
@@ -91,19 +96,19 @@ main {
   height: 4173px;
   background-color: #ffffff; }
 
-.our_story {
+.home {
   width: 873px;
   height: 262px;
   background-color: #ffffff;
   display: flex;
   margin: 0 auto;
   margin-top: 70px; }
-  .our_story img {
+  .home img {
     width: 235px;
     height: 229px; }
-  .our_story .text {
+  .home .text {
     margin-left: 100px; }
-    .our_story .text H2 {
+    .home .text H2 {
       width: 155px;
       height: 16px;
       color: #413d4b;
@@ -111,11 +116,11 @@ main {
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 1.1px; }
-    .our_story .text .maintext {
+    .home .text .maintext {
       margin-top: 28px;
       width: 538px;
       height: 146px; }
-      .our_story .text .maintext .thisis {
+      .home .text .maintext .thisis {
         opacity: 0.75;
         color: #413d4b;
         font-family: Roboto;
@@ -123,7 +128,7 @@ main {
         font-weight: 300;
         line-height: 22px;
         letter-spacing: 0.42px; }
-      .our_story .text .maintext .morbi {
+      .home .text .maintext .morbi {
         margin-top: 15px;
         opacity: 0.75;
         color: #413d4b;
@@ -132,10 +137,13 @@ main {
         font-weight: 300;
         line-height: 22px;
         letter-spacing: 0.42px; }
-    .our_story .text .button {
+    .home .text .button {
       margin-top: 15px; }
+    .home .text .button:hover {
+      color: #311d5e;
+      border-color: #311d5e; }
 
-.story {
+.about {
   text-align: center;
   width: 100%;
   height: 550px;
@@ -143,9 +151,9 @@ main {
   background-repeat: no-repeat;
   background-position: left,50%;
   background-size: auto auto, cover; }
-  .story img {
+  .about img {
     margin-top: 202px; }
-  .story H3 {
+  .about H3 {
     margin: 0 auto;
     margin-top: 34px;
     width: 166px;
@@ -158,100 +166,109 @@ main {
 
 .expertise {
   height: 755px; }
-  .expertise div {
-    margin-top: 72px;
-    margin-bottom: 68px; }
-    .expertise div H3 {
-      margin: 0 auto;
-      width: 130px;
-      height: 16px;
-      color: #413d4b;
-      font-family: "Playfair Display";
-      font-size: 22px;
-      font-weight: 700;
-      letter-spacing: 1.1px; }
-    .expertise div H4 {
-      margin: 0 auto;
-      margin-top: 16px;
-      margin-bottom: 18px;
-      width: 411px;
-      height: 15px;
-      opacity: 0.75;
-      color: #2f2d35;
-      font-family: "Playfair Display";
-      font-size: 14px;
-      font-weight: 400;
-      letter-spacing: 1.05px; }
-    .expertise div .try {
-      margin: 0 auto;
-      width: 50px;
-      height: 2px; }
-    .expertise div .block {
-      margin: 0 auto;
-      margin-top: 48px;
-      width: 940px;
-      height: 500px; }
-      .expertise div .block .topline {
-        display: flex;
-        justify-content: space-between; }
-        .expertise div .block .topline .maket {
+  .expertise .cont .title3 {
+    padding-top: 71px;
+    margin: 0 auto;
+    width: 130px;
+    height: 16px;
+    color: #413d4b;
+    font-family: "Playfair Display";
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1.1px; }
+  .expertise .cont H4 {
+    margin: 0 auto;
+    margin-top: 36px;
+    margin-bottom: 18px;
+    width: 411px;
+    height: 15px;
+    opacity: 0.75;
+    color: #2f2d35;
+    font-family: "Playfair Display";
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1.05px; }
+  .expertise .cont .try {
+    margin: 0 auto;
+    width: 50px;
+    height: 1px;
+    background-color: silver; }
+  .expertise .cont .block {
+    margin: 0 auto;
+    margin-top: 35px;
+    width: 940px;
+    height: 500px; }
+    .expertise .cont .block .line1 {
+      height: 50%;
+      display: flex; }
+      .expertise .cont .block .line1 .maket {
+        border-bottom: 1px solid #e7e7e7;
+        width: 33.3%;
+        height: 100%;
+        text-align: center; }
+        .expertise .cont .block .line1 .maket img {
+          margin-top: 40px;
+          height: 50px; }
+        .expertise .cont .block .line1 .maket H3 {
+          margin: 0 auto;
+          margin-top: 30px;
+          width: 253px;
+          height: 10px;
+          color: #413d4b;
+          font-family: "Roboto - Black";
+          font-size: 14px;
+          font-weight: 900;
+          letter-spacing: 0.7px; }
+        .expertise .cont .block .line1 .maket p {
+          margin: 0 auto;
+          margin-top: 50px;
           width: 254px;
-          height: 218px;
-          text-align: center; }
-          .expertise div .block .topline .maket img {
-            height: 50px; }
-          .expertise div .block .topline .maket H3 {
-            margin-top: 35px;
-            width: 243px;
-            height: 10px;
-            color: #413d4b;
-            font-family: "Roboto - Black";
-            font-size: 14px;
-            font-weight: 900;
-            letter-spacing: 0.7px; }
-          .expertise div .block .topline .maket p {
-            margin-top: 25px;
-            width: 254px;
-            height: 58px;
-            opacity: 0.75;
-            color: #333333;
-            font-family: Roboto;
-            font-size: 14px;
-            font-weight: 300;
-            line-height: 22px;
-            letter-spacing: 0.7px; }
-      .expertise div .block .bottomline {
-        margin-top: 65px;
-        display: flex;
-        justify-content: space-between; }
-        .expertise div .block .bottomline .maket {
+          height: 58px;
+          opacity: 0.75;
+          color: #333333;
+          font-family: Roboto;
+          font-size: 14px;
+          font-weight: 300;
+          line-height: 22px;
+          letter-spacing: 0.7px; }
+      .expertise .cont .block .line1 .maket:not(.lastchild) {
+        border-right: 1px solid #e7e7e7; }
+    .expertise .cont .block .line2 {
+      height: 50%;
+      display: flex; }
+      .expertise .cont .block .line2 .maket {
+        width: 33.3%;
+        height: 100%;
+        text-align: center; }
+        .expertise .cont .block .line2 .maket img {
+          margin-top: 40px;
+          height: 50px; }
+        .expertise .cont .block .line2 .maket H3 {
+          margin: 0 auto;
+          margin-top: 30px;
+          width: 253px;
+          height: 10px;
+          color: #413d4b;
+          font-family: "Roboto - Black";
+          font-size: 14px;
+          font-weight: 900;
+          letter-spacing: 0.7px; }
+        .expertise .cont .block .line2 .maket p {
+          margin: 0 auto;
+          margin-top: 50px;
           width: 254px;
-          height: 218px;
-          text-align: center; }
-          .expertise div .block .bottomline .maket img {
-            height: 50px; }
-          .expertise div .block .bottomline .maket H3 {
-            margin-top: 35px;
-            width: 253px;
-            height: 10px;
-            color: #413d4b;
-            font-family: "Roboto - Black";
-            font-size: 14px;
-            font-weight: 900;
-            letter-spacing: 0.7px; }
-          .expertise div .block .bottomline .maket p {
-            margin-top: 25px;
-            width: 254px;
-            height: 58px;
-            opacity: 0.75;
-            color: #333333;
-            font-family: Roboto;
-            font-size: 14px;
-            font-weight: 300;
-            line-height: 22px;
-            letter-spacing: 0.7px; }
+          height: 58px;
+          opacity: 0.75;
+          color: #333333;
+          font-family: Roboto;
+          font-size: 14px;
+          font-weight: 300;
+          line-height: 22px;
+          letter-spacing: 0.7px; }
+      .expertise .cont .block .line2 .maket:not(.lastchild) {
+        border-right: 1px solid #e7e7e7; }
 
-.meet {
+.teams {
   text-align: center;
   width: 100%;
   height: 712px;
@@ -259,9 +276,9 @@ main {
   background-repeat: no-repeat;
   background-position: left,100%;
   background-size: auto auto, cover; }
-  .meet .gram {
+  .teams .gram {
     padding-top: 90px; }
-    .meet .gram .out {
+    .teams .gram .out {
       margin: 0 auto;
       width: 320px;
       height: 16px;
@@ -270,7 +287,7 @@ main {
       font-size: 22px;
       font-weight: 700;
       letter-spacing: 1.1px; }
-    .meet .gram .lorem {
+    .teams .gram .lorem {
       margin: 0 auto;
       margin-top: 30px;
       margin-bottom: 18px;
@@ -282,26 +299,26 @@ main {
       font-size: 14px;
       font-weight: 400;
       letter-spacing: 1.05px; }
-    .meet .gram .try {
+    .teams .gram .try {
       margin: 0 auto;
       width: 50px;
       height: 2px; }
-    .meet .gram .people {
+    .teams .gram .people {
       width: 940px;
       display: flex;
       justify-content: space-between;
       margin-top: 30px;
       margin: 0 auto;
       margin-top: 70px; }
-      .meet .gram .people div {
+      .teams .gram .people div {
         text-align: center;
         width: 220px; }
-        .meet .gram .people div img {
+        .teams .gram .people div img {
           width: 220px; }
-        .meet .gram .people div .build {
+        .teams .gram .people div .build {
           height: 80px;
           border: 1px solid rgba(117, 121, 120, 0.705); }
-          .meet .gram .people div .build H3 {
+          .teams .gram .people div .build H3 {
             margin: 0 auto;
             margin-top: 15px;
             width: 90px;
@@ -311,7 +328,7 @@ main {
             font-size: 14px;
             font-weight: 400;
             letter-spacing: 0.6px; }
-          .meet .gram .people div .build H4 {
+          .teams .gram .people div .build H4 {
             margin: 0 auto;
             margin-top: 15px;
             width: 117px;
@@ -321,7 +338,7 @@ main {
             font-family: Roboto;
             font-size: 13px;
             font-weight: 300; }
-    .meet .gram .become {
+    .teams .gram .become {
       margin: 0 auto;
       margin-top: 30px;
       width: 309px;
@@ -331,8 +348,11 @@ main {
       font-size: 14px;
       font-weight: 300;
       letter-spacing: 0.7px; }
-    .meet .gram .button {
+    .teams .gram .button {
       margin-top: 15px; }
+    .teams .gram .button:hover {
+      border-color: silver;
+      color: silver; }
 
 .works {
   text-align: center; }
@@ -369,8 +389,11 @@ main {
   .works .button {
     margin-top: 70px;
     margin-bottom: 70px; }
+  .works .button:hover {
+    border-color: slateblue;
+    color: slateblue; }
 
-.ceo {
+.people_say {
   text-align: center;
   width: 100%;
   height: 500px;
@@ -378,13 +401,13 @@ main {
   background-repeat: no-repeat;
   background-position: left,100%;
   background-size: auto auto, cover; }
-  .ceo .block1 {
+  .people_say .block1 {
     margin-top: 69px;
     width: 32px;
     height: 26px;
     opacity: 0.9;
     color: #ffffff; }
-  .ceo p {
+  .people_say p {
     margin: 0 auto;
     margin-top: 30px;
     width: 770px;
@@ -396,7 +419,7 @@ main {
     font-weight: 400;
     line-height: 26px;
     letter-spacing: 0.4px; }
-  .ceo H2 {
+  .people_say H2 {
     margin: 0 auto;
     margin-top: 30px;
     width: 131px;
@@ -407,7 +430,7 @@ main {
     font-weight: 400;
     line-height: 22px;
     letter-spacing: 0.7px; }
-  .ceo H3 {
+  .people_say H3 {
     margin: 0 auto;
     margin-top: 30px;
     width: 102px;
@@ -418,7 +441,7 @@ main {
     font-size: 13px;
     font-weight: 300;
     line-height: 22px; }
-  .ceo .faces {
+  .people_say .faces {
     margin: 0 auto;
     margin-top: 50px;
     width: 391px;
@@ -426,15 +449,21 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center; }
-    .ceo .faces .back {
+    .people_say .faces .back {
+      background-color: transparent;
       width: 11px;
       height: 21px; }
-    .ceo .faces .block2 {
-      width: 45px;
-      height: 45px; }
-    .ceo .faces .big {
-      width: 70px;
-      height: 70px; }
+    .people_say .faces .lastblock {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 330px; }
+      .people_say .faces .lastblock .block2 {
+        width: 45px;
+        height: 45px; }
+      .people_say .faces .lastblock .big {
+        width: 70px;
+        height: 70px; }
 
 .client {
   display: flex;
@@ -457,6 +486,7 @@ main {
     .client .column1 form {
       margin-top: 35px; }
       .client .column1 form div input {
+        padding-left: 15px;
         color: #413d4b;
         font-family: Roboto;
         font-size: 14px;
@@ -468,6 +498,8 @@ main {
         width: 460px;
         height: 45px; }
       .client .column1 form .texteria textarea {
+        padding-top: 15px;
+        padding-left: 14px;
         width: 460px;
         height: 200px;
         border: 1.5px solid silver;
@@ -479,6 +511,9 @@ main {
         letter-spacing: 0.7px; }
       .client .column1 form button {
         margin-top: 21px; }
+      .client .column1 form button:hover {
+        color: #311d5e;
+        border-color: #311d5e; }
   .client .column2 H2 {
     padding-top: 48px;
     width: 238px;
@@ -591,11 +626,12 @@ footer {
         margin-top: 70px;
         display: flex; }
         footer .topfooter .thirdcolumn .finishbutton input {
+          padding-left: 15px;
+          text-align: left;
           width: 211px;
           height: 45px;
           background-color: transparent;
           border: silver 1px solid;
-          text-align: center;
           opacity: 0.75;
           color: #ffffff;
           font-family: Roboto;
@@ -603,52 +639,61 @@ footer {
           font-weight: 300;
           line-height: 26px;
           letter-spacing: 0.7px; }
+        footer .topfooter .thirdcolumn .finishbutton button:hover {
+          opacity: 0.7;
+          background-color: #fff; }
         footer .topfooter .thirdcolumn .finishbutton .telegram {
           margin-left: 5px;
           width: 70px;
           height: 45px;
-          border: 1px solid #ffffff;
-          background-color: #ffffff;
+          background-color: #fcfcfc;
           opacity: 0.5; }
           footer .topfooter .thirdcolumn .finishbutton .telegram img {
             width: 25px;
             height: 25px; }
-      footer .topfooter .thirdcolumn .items {
-        margin-top: 17px; }
-        footer .topfooter .thirdcolumn .items button {
-          width: 35px;
-          height: 35px;
-          border: 1px solid silver;
-          background-color: transparent;
-          border-radius: 50%; }
-          footer .topfooter .thirdcolumn .items button img {
-            vertical-align: middle; }
-  footer .bottomfooter {
-    margin: 0 auto;
-    width: 950px;
-    margin-top: 140px;
+    footer .topfooter .items {
+      margin-top: 17px; }
+      footer .topfooter .items button:hover {
+        opacity: 0.4;
+        border-color: cyan; }
+      footer .topfooter .items button {
+        width: 35px;
+        height: 35px;
+        border: 1px solid silver;
+        background-color: transparent;
+        border-radius: 50%; }
+        footer .topfooter .items button img {
+          vertical-align: middle; }
+
+.bottomfooter {
+  margin: 0 auto;
+  width: 950px;
+  margin-top: 140px;
+  display: flex;
+  justify-content: space-between; }
+  .bottomfooter .footermenu {
+    opacity: 0.85;
     display: flex;
-    justify-content: space-between; }
-    footer .bottomfooter .footermenu {
-      opacity: 0.85;
-      display: flex;
-      justify-content: space-between;
-      width: 300px;
-      height: 12px;
-      font-family: Roboto;
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 26px;
-      letter-spacing: 0.35px; }
-      footer .bottomfooter .footermenu a {
-        color: #ffffff; }
-    footer .bottomfooter p {
-      width: 226px;
-      height: 14px;
-      color: #ffffff;
-      font-family: Roboto;
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 26px;
-      letter-spacing: 0.35px;
-      opacity: 0.85; }
+    justify-content: space-between;
+    width: 300px;
+    height: 12px;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.35px; }
+    .bottomfooter .footermenu a {
+      color: #ffffff; }
+    .bottomfooter .footermenu a:hover {
+      opacity: 0.4;
+      color: cyan; }
+  .bottomfooter p {
+    width: 226px;
+    height: 14px;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.35px;
+    opacity: 0.85; }

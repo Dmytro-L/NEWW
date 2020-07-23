@@ -22,7 +22,7 @@ gulp.task('scss', function(){
 
 gulp.task('watch', function(){
     gulp.watch('app/scss/**/*.scss', gulp.parallel('scss'))
-    gulp.watch('app/*.pug', gulp.parallel('pug'))
+    gulp.watch('app/**/*.pug', gulp.parallel('pug'))
     gulp.watch('app/*.html', gulp.parallel('html'))
 
 });

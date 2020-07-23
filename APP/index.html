@@ -7,20 +7,21 @@
     <title>Document</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="home">
       <div class="topheader"><img class="logo" src="img/logo.png" alt="Logo"/>
-        <div class="menu"> 
-          <ul> <a class="green" href="#">HOME</a></ul>
-          <ul> <a href="#">ABOUT</a></ul>
-          <ul><a href="#">EXPERTISE</a></ul>
-          <ul><a href="#">TEAMS</a></ul>
-          <ul><a href="#">WORKS</a></ul>
-          <ul><a href="#">PEOPLE SAY</a></ul>
-          <ul><a href="#">CONTACT</a></ul>
-        </div>
+        <ul class="menu"> 
+          <li> <a class="green" href="#home">HOME</a></li>
+          <li> <a href="#about">ABOUT</a></li>
+          <li><a href="#expertise">EXPERTISE</a></li>
+          <li><a href="#teams">TEAMS</a></li>
+          <li><a href="#works">WORKS</a></li>
+          <li><a href="#people">PEOPLE SAY</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
       </div>
       <div class="bottomheader">
-        <H2 class="title">We Are Awesome Creative Agency</H2><img src="img/slash.png" alt="___"/>
+        <H2 class="title">We Are Awesome Creative Agency</H2>
+        <div class="line"></div>
         <p class="textheader">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
         <button class="button" type="submit">LEARN MORE</button>
         <div class="next">
@@ -32,7 +33,7 @@
       </div>
     </header>
     <main>
-      <section class="our_story"><img src="img/biglogo.png" alt="#"/>
+      <section class="home" id="home"><img src="img/biglogo.png" alt="#"/>
         <div class="text">
           <h2>OUR STORY</h2>
           <div class="maintext">
@@ -42,53 +43,59 @@
           <button class="button" type="submit">LEARN MORE</button>
         </div>
       </section>
-      <section class="story"><img src="img/play.png" alt="$"/>
+      <section class="about" id="about"><img src="img/play.png" alt="$"/>
         <h3>WATCH OUR STORY</h3>
       </section>
-      <section class="expertise">
-        <div>   
-          <H3>EXPERTISE</H3>
+      <section class="expertise" id="expertise">
+        <div class="cont">   
+          <H3 class="title3">EXPERTISE</H3>
           <H4>Lorem ipsum dolor sit amet proin gravida nibh vel velit</H4>
-          <div class="try"><img src="img/s.png" alt="#"/></div>
-          <table class="block">
-            <tr class="topline">
-              <th class="maket">
-                <div><img src="img/1.png" alt="1"/></div>
-                <H3>WEB DESIGN & DEVELOPMENT</H3>
-                <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
-              </th>
-              <th class="maket">
-                <div><img src="img/2.png" alt="1"/></div>
-                <H3>BRANDING IDENTITY</H3>
-                <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
-              </th>
-              <th class="maket">
-                <div><img src="img/3.png" alt="1"/></div>
-                <H3>MOBILE APP</H3>
-                <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
-              </th>
-            </tr>
-            <tr class="bottomline">
-              <th class="maket">
-                <div> <img src="img/4.png" alt="1"/></div>
-                <H3>SEARCH ENGINE OPTIMIZATION</H3>
-                <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
-              </th>
-              <th class="maket">
-                <div><img src="img/5.png" alt="1"/></div>
-                <H3>GAME DEVELOPMENT</H3>
-                <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
-              </th>
-              <th class="maket">
-                <div><img src="img/6.png" alt="1"/></div>
-                <H3>MADE WITH LOVE</H3>
-                <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
-              </th>
-            </tr>
-          </table>
+          <div class="try"></div>
+          <div class="block">
+            <div class="line1">
+              <div class="maket">
+                <div><img src="img/1.png" alt="1"/>
+                  <H3>WEB DESIGN & DEVELOPMENT</H3>
+                  <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
+                </div>
+              </div>
+              <div class="maket">
+                <div><img src="img/2.png" alt="1"/>
+                  <H3>BRANDING IDENTITY</H3>
+                  <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
+                </div>
+              </div>
+              <div class="maket lastchild">
+                <div> <img src="img/3.png" alt="1"/>
+                  <H3>MOBILE APP</H3>
+                  <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.                        </p>
+                </div>
+              </div>
+            </div>
+            <div class="line2">
+              <div class="maket">
+                <div> <img src="img/4.png" alt="1"/>
+                  <H3>SEARCH ENGINE OPTIMIZATION</H3>
+                  <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
+                </div>
+              </div>
+              <div class="maket">
+                <div><img src="img/5.png" alt="1"/>
+                  <H3>GAME DEVELOPMENT</H3>
+                  <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
+                </div>
+              </div>
+              <div class="maket lastchild">
+                <div><img src="img/6.png" alt="1"/>
+                  <H3>MADE WITH LOVE</H3>
+                  <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
-      <section class="meet">
+      <section class="teams" id="teams">
         <div class="gram">   
           <H3 class="out">MEET OUR AMAZING TEAM</H3>
           <H4 class="lorem">Lorem ipsum dolor sit amet proin gravida nibh vel velit</H4>
@@ -125,7 +132,7 @@
           </div>
         </div>
       </section>
-      <section class="works">
+      <section class="works" id="works">
         <div class="top">
           <H3>OUR WORKS</H3>
           <div class="see">
@@ -135,11 +142,15 @@
         <div class="gmi"><img src="img/7.png" alt="#"/><img src="img/8.png" alt="#"/><img src="img/9.png" alt="#"/><img src="img/10.png" alt="#"/><img src="img/7.png" alt="#"/><img src="img/8.png" alt="#"/><img src="img/9.png" alt="#"/><img src="img/10.png" alt="#"/><img src="img/7.png" alt="#"/><img src="img/8.png" alt="#"/><img src="img/9.png" alt="#"/><img src="img/10.png" alt="#"/></div>
         <button class="button">LOAD MORE</button>
       </section>
-      <section class="ceo"><img class="block1" src="img/55.png" alt="55"/>
+      <section class="people_say" id="people"><img class="block1" src="img/55.png" alt="55"/>
         <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
         <h2>JANE GALADRIEL</h2>
         <h3>CEO TENGKUREP</h3>
-        <div class="faces"><img class="back" src="img/back.png" alt="#"/><img class="block2" src="img/_1.png" alt="#"/><img class="block2" src="img/_2.png" alt="#"/><img class="big" src="img/_3.png" alt="#"/><img class="block2" src="img/_4.png" alt="#"/><img class="block2" src="img/_5.png" alt="#"/><img class="back" src="img/forward.png" alt="#"/></div>
+        <div class="faces">
+          <button class="back"><img src="img/back.png" alt="#"/></button>
+          <div class="lastblock">   <img class="block2" src="img/_1.png" alt="#"/><img class="block2" src="img/_2.png" alt="#"/><img class="big" src="img/_3.png" alt="#"/><img class="block2" src="img/_4.png" alt="#"/><img class="block2" src="img/_5.png" alt="#"/></div>
+          <button class="back"> <img src="img/forward.png" alt="#"/></button>
+        </div>
       </section>
       <section class="client">
         <div class="column1">
@@ -169,8 +180,8 @@
         </div>
       </section>
     </main>
-    <footer>
-      <div class="topfooter">
+    <footer> 
+      <div class="topfooter" id="contact">
         <div class="firstcolumn"><img src="img/logo.png" alt="#"/>
           <p>lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh elit. Duis sed odio sit amet auctror a ornare odio non mauris vitae erat in elit</p>
         </div>
