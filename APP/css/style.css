@@ -18,12 +18,10 @@ body {
   height: 5300px; }
 
 .good {
-  background-image: url("../img/Headerfont.png"), url("../img/HeaderFontIMG.png");
-  background-position: left,50%;
+  height: 0;
   position: sticky;
-  top: 30px; }
+  top: 25px; }
   .good .top_header {
-    height: 0;
     width: 940px;
     margin: 0 auto;
     align-items: center;
@@ -34,7 +32,7 @@ body {
       font-size: 13px;
       font-weight: 400;
       margin-left: 15px;
-      color: #ffffff;
+      color: #c25757;
       letter-spacing: 0.33px; }
     .good .top_header a:hover {
       color: #00e0d0; }
@@ -74,6 +72,9 @@ body {
         letter-spacing: 0.7px; }
       .header .const .bottom_header .button {
         margin-top: 50px; }
+      .header .const .bottom_header button:hover {
+        border-color: #ffffff;
+        color: #ffffff; }
       .header .const .bottom_header .next {
         margin-top: 142px; }
         .header .const .bottom_header .next button {
@@ -113,6 +114,9 @@ body {
       letter-spacing: 0.42px; }
   .home .const .text .button {
     margin-top: 22px; }
+  .home .const .text button:hover {
+    border-color: #bb3434;
+    color: #ff0000; }
 
 .about {
   text-align: center;

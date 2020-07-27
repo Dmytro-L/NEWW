@@ -21,14 +21,13 @@ body{
     height: 5300px;
 }
 .good{
-    background-image: url("../img/Headerfont.png"),url("../img/HeaderFontIMG.png");
-    background-position: left,50%;
+    height: 0;
     position: sticky;
-    top: 30px;
+    top: 25px;
     
     
     .top_header{
-    height: 0;
+
 
     width: 940px;
     margin: 0 auto;
@@ -42,7 +41,7 @@ body{
         font-size: 13px;
         font-weight: 400;
         margin-left: 15px;
-        color: #ffffff;
+        color: #c25757;
         letter-spacing: 0.33px;
     }
     a:hover{
@@ -97,6 +96,11 @@ body{
                     
 
             }
+            button:hover{
+                border-color: #ffffff;
+                color: #ffffff;
+            }
+
             .next{
                 margin-top: 142px;
                 
@@ -111,6 +115,7 @@ body{
                         background-color: #00e0d0;
                     }
                 }
+                
                 
                     
                 
@@ -159,6 +164,10 @@ body{
             .button{
                 margin-top: 22px;
                 @extend %button_style
+            }
+            button:hover{
+                border-color: #bb3434;
+                color: #ff0000;
             }
                 
 
@@ -637,6 +646,7 @@ body{
                         color: #00e0d0;  
                         }
                 }
+                
                 
             }
             .texteria{
