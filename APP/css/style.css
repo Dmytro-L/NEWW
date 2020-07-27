@@ -17,24 +17,27 @@ body {
   position: relative;
   height: 5300px; }
 
-.top_header {
-  height: 0;
-  width: 940px;
-  margin: 0 auto;
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
+.good {
+  background-image: url("../img/Headerfont.png"), url("../img/HeaderFontIMG.png");
+  background-position: left,50%;
   position: sticky;
-  top: 35px; }
-  .top_header a {
-    font-family: "Roboto - Black";
-    font-size: 13px;
-    font-weight: 400;
-    margin-left: 15px;
-    color: #ffffff;
-    letter-spacing: 0.33px; }
-  .top_header a:hover {
-    color: #00e0d0; }
+  top: 30px; }
+  .good .top_header {
+    height: 0;
+    width: 940px;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    justify-content: space-between; }
+    .good .top_header a {
+      font-family: "Roboto - Black";
+      font-size: 13px;
+      font-weight: 400;
+      margin-left: 15px;
+      color: #ffffff;
+      letter-spacing: 0.33px; }
+    .good .top_header a:hover {
+      color: #00e0d0; }
 
 .header {
   width: 100%;
