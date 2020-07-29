@@ -1,41 +1,45 @@
-.contact#contact  
-    .topfooter
-        .firstcolumn
-            img(src="img/logo.png", alt="#")
-            p lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh elit. Duis sed odio sit amet auctror a ornare odio non mauris vitae erat in elit
-        .secondcolumn
-            H3 OUR STUDIO
-            .contacts
-                .up
-                    div
-                        img(src="img/31.png", alt="#")
-                    p Ruko cucruk, Jl. Radio luar dalem jos No.12 - 13, Kalideres - Jakarta Barat 11480 - Indonesia
-                .down
-                    div
-                        img(src="img/32.png", alt="#")
-                    p (+62) 21-2224 3333
-        .thirdcolumn
-            H3.stay STAY IN TOUCH
-            .finishbutton
-                input(placeholder="Subscribe our newsletter", name="Subjecte", type="text")
-                button.telegram 
-                    img(src="img/33.png", alt="#")
-            .items
-                button     
-                    img(src="img/34.png", alt="#")
-                button 
-                    img(src="img/35.png", alt="#")
-                button 
-                    img(src="img/36.png", alt="#")
-                button 
-                    img(src="img/37.png", alt="#")
-                button 
-                    img(src="img/38.png", alt="#")
-                button 
-                    img(src="img/39.png", alt="#")
-    .bottomfooter
-        .footermenu
-            a(href="#") HELP
-            a(href="#") TERMS & CONDITION
-            a(href="#") PRIVACY
-        p Copyright © 2015 - Tajem Creative
+.footer
+    .footer__block
+        .footer__column1
+            .title
+                H2 About
+                .line-h2
+            p Pilchard nurse shark roosterfish sea catfish spiderfish limia fingerfish.
+            .button-block
+                button
+                    a(href="https://www.google.com")
+                        div
+                            img(src="img/fb1.png", alt="#")
+                button
+                    a(href="https://www.google.com")
+                        div
+                            img(src="img/tw1.png", alt="#")
+                button
+                    a(href="https://www.google.com")
+                        div 
+                            img(src="img/G1.png", alt="#")
+        .footer__column2
+            .title
+                H2 Features
+                .line-h2
+            ul.list
+                    each name in ['Lorem ipsum', 'Dolor sit amet', '', 'Nullam sed', 'integer sagttis eget']
+                        li
+                            a(href="https://varta1.com.ua/")= name
+        .footer__column3
+            .title
+                H2 Newsletter
+                .line-h2
+            p.left Email
+            .line-long
+            p.right Subscribe
+        .footer__column4
+            .title
+                H2 Contact Us
+                .line-h2
+            img(src="img/1221.png", alt="#")
+
+            
+    .footer__bottom
+        .footer__const
+            p JM App © All rights reserved
